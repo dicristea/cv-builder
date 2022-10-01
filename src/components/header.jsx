@@ -5,7 +5,7 @@ const Header = () => {
         <div className="header">
             <header>
                 <img src="../../logo192.png" alt="React logo" />
-                <h1>Job Application</h1>
+                <h1>CV Builder</h1>
             </header>
         </div>  
     )
