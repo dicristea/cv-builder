@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import "./styles/App.css";
 import Info from "./components/Info";
 import Education from "./components/Education";
-import Work from "./components/Work";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <hr />
           <Education />
           <hr />
-          <Work />
+          <Experience />
         </div>
       </div>
       <Footer />

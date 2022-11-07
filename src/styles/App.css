@@ -1,2 +1,28 @@
-/* Main Content */
+/* Main */
+.main-content {
+    padding:  40px;
+    display: grid;
+    align-items: start;
+    grid-template-columns: minmax(100px, 700px);
+    justify-content: center;
+}
+  
+.card {
+    padding: 30px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 20px;
+}
+
+.experience-box, .education-box {
+    display: grid; 
+}
+
+.date-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
 

@@ -1,9 +1,10 @@
 :root {
   --dark-accent: #000000;
-  --body-color: #f4f7fc;
+  --body-color: #edf2fd;
   --card-color: white;
   --accent: gold;
   --box-shadow: rgba(128, 128, 128, 0.228);
+  --border-radius: 7px;
 }
 
 * {
@@ -66,34 +67,24 @@ h1 {
   padding: 10px 0;
 }
 
+h3 {
+  padding-right: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  justify-self: left;
+}
+
 button {
   border: none;
-  border-radius: 7px;
+  border-radius: var(--border-radius);
   padding: 7px 10px;
   cursor: pointer;
   background-color: rgb(231, 231, 231);
 }
 
 button:hover {
-  background-color: rgb(182, 182, 182);
-}
-
-/* Main */
-.main-content {
-  padding:  40px;
-  display: grid;
-  align-items: start;
-  grid-template-columns: minmax(100px, 700px);
-  justify-content: center;
-}
-
-.card {
-  padding: 30px;
-  background-color: white;
-  border-radius: 7px;
-  display: grid;
-  grid-template-rows: min-content;
-  gap: 20px;
+  background-color: #b8c2d6;
 }
 
 /* Footer */
