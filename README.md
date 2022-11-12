@@ -5,7 +5,6 @@ A CV Builder app created with React.js exploring usage and implementation of fun
 
 Overview
 Features:
-
 - add, delete and edit cv information
 - write descriptions for experiences, choose start/end dates
 - preview finalized CV information as presentable/printable CV
@@ -22,7 +21,11 @@ Tools:
 What I learned:
 - React functionality: function components, hooks
 - Form Validation: Constraint Validation API
-- Cool CSS tricks/animations
+- CSS tricks/animations
+  - conditional class rendering 
+    ToggleButton => Ex. className={`toggle ${toggle ? 'toggle--checked': ''}`}
+  - touchscreen css (touch-action: pan-x;)
+- Practiced github branch workflow
 
 Tips:
 

@@ -8,23 +8,25 @@ const ExperienceList = () => {
  return (
     <div className="list-box">
         <InputField
+            type='text'
             label='Company'
             name='company'
             id='company'
         />
         <InputField
+            type='text'
             label='Title'
             name='title'
             id='title'
         />
-        <div className="date-container">
+        <div className="list-date">
             <DateField
-                label='Start Date: '
+                label='Start Date '
                 name='start-date'
                 id='start-date'
             />
             <DateField
-                label='End Date: '
+                label='End Date '
                 name='end-date'
                 id='end-date'
             />

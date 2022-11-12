@@ -9,7 +9,7 @@ const Experience = () => {
         <h3>Experience {value}</h3>
         <ExperienceList />
         <button onClick={() => setValue(value + 1)}>
-            Add
+            Add Experience
         </button>
     </div>
  )

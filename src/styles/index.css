@@ -2,7 +2,7 @@
   --dark-accent: #000000;
   --body-color: #edf2fd;
   --card-color: white;
-  --accent: gold;
+  --accent: #5c8aee;
   --box-shadow: rgba(128, 128, 128, 0.228);
   --border-radius: 7px;
 }
@@ -43,13 +43,16 @@ body {
 
 .header-container {
   display: grid;
-  grid-template-columns: 1fr min-content;
+  grid-template-columns: 1fr minmax(50px, 170px);
   gap: 50px;
   align-items: center;
   justify-content: center;
-  padding: 30px 50px;
+  padding: 25px 50px;
   background-color: var(--card-color);
   box-shadow: 0px 5px 10px var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header {
@@ -67,11 +70,20 @@ h1 {
   padding: 10px 0;
 }
 
+.preview-box {
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  gap: 7px;
+  justify-content: center;
+}
+
 h3 {
   padding-right: 10px;
   padding-bottom: 4px;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
   justify-self: left;
 }
 
@@ -83,8 +95,16 @@ button {
   background-color: rgb(231, 231, 231);
 }
 
+.addButton {
+  margin-top: 10px;
+}
+
 button:hover {
   background-color: #b8c2d6;
+}
+
+button:active {
+  background-color: rgb(231, 231, 231);
 }
 
 /* Footer */

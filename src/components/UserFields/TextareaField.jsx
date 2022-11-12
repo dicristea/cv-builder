@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
-import "../../styles/InputField.css";
+import "../../styles/UserFields.css";
 
 const TextareaField = ({label, name, id }) => {
     const [value, setValue] = useState('');

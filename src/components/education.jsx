@@ -1,17 +1,21 @@
 import React, { useState } from "react";
-import EducationList from "./EducationList";
+import EducationItem from "./EducationItem";
+import Button from "./UserFields/Button";
+
 
 const Education = () => {
- const [value, setValue] = useState("");
+    const [educationList, setEducationList] = useState(['']);
+
+    const addEducationItem = () => {
+        setEducationList([...educationList, <EducationItem key={educationList.length} />])
+    };
 
  return (
     <div className="education-box">
-        <h3>Education {value}</h3>
-        <EducationList />
+        <h3>Education</h3>
 
-        <button onClick={() => setValue(value + 1)}>
-            Add
-        </button>
+        {educationList}
+        <Button onClick={addEducationItem} text='Add Education' className='addButton'/>
     </div>
  )
  

@@ -13,16 +13,26 @@
     border-radius: var(--border-radius);
     display: grid;
     grid-template-rows: min-content;
-    gap: 20px;
+    gap: 10px;
 }
 
 .experience-box, .education-box {
     display: grid; 
 }
 
-.date-container {
+.info-input-box {
+    margin-top: 10px;
+}
+
+.list-box {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed rgb(220, 220, 220);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: 2fr 1fr;
+}
+
+.list-options {
+    grid-column: 1 / 3;
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
-import "../../styles/InputField.css";
+import "../../styles/UserFields.css";
 
 const DateField = ({ label, name, id }) => {
     const [value, setValue] = useState('');
@@ -11,7 +11,7 @@ const DateField = ({ label, name, id }) => {
 
     return (
         <div className="date-box">
-            <label htmlFor={id}>{label}</label>
+            <label className="date-label" htmlFor={id}>{label}</label>
             <input 
                 type="month"
                 id={id}
