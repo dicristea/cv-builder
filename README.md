@@ -2,7 +2,7 @@ Project: CV Builder
 
 A CV Builder app created with React.js exploring usage and implementation of function components. The project is inspired by The Odin Project curriculum.
 
-<a href="https://dicristea.github.io/cv-builder/">🔗Live Preview</a>
+<a href="https://dicristea.github.io/cv-project/">🔗Live Preview</a>
 
 Overview
 Features:
