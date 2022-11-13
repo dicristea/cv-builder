@@ -4,7 +4,7 @@ import githubLogo from "../assets/GitHub-Mark-64px.png";
 const Footer = () => {
   return (
     <footer>
-      <a href="https://github.com/dicristea/cv-project">
+      <a href="https://github.com/dicristea/cv-builder">
         <img
           className="sourceGithub"
           src={githubLogo}
