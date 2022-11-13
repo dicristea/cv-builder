@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./styles/App.css";
 import Info from "./components/Info";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
+import SectionContainer from "./components/SectionContainer";
 
-function App() {
+const App = () => {
+  const [isPreviewActive, setIsPreviewActive] = useState(false);
+
+  const onPreviewChange = (toggle) => {
+    setIsPreviewActive(toggle);
+  };
+
   return (
     <div className="App">
-      <Header />
+      <Header onChange={(toggle) => onPreviewChange(toggle)} />
       <div className="main-content">
         <div className="card">
-          <Info />
+          <Info isPreviewActive={isPreviewActive} />
           <hr />
-          <Education />
+          <SectionContainer
+            isPreviewActive={isPreviewActive}
+            listType="Education"
+          />
           <hr />
-          <Experience />
+          <SectionContainer
+            isPreviewActive={isPreviewActive}
+            listType="Experience"
+          />
         </div>
       </div>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

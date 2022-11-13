@@ -39,45 +39,8 @@ body {
   min-height: 100vh;
 }
 
-/* HEADER */
-
-.header-container {
-  display: grid;
-  grid-template-columns: 1fr minmax(50px, 170px);
-  gap: 50px;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 50px;
-  background-color: var(--card-color);
-  box-shadow: 0px 5px 10px var(--box-shadow);
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-header > img {
-  height: 60px;
-  width: 60px;
-}
-
 h1 {
   padding: 10px 0;
-}
-
-.preview-box {
-  font-weight: 600;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  gap: 7px;
-  justify-content: center;
 }
 
 h3 {
@@ -93,10 +56,6 @@ button {
   padding: 7px 10px;
   cursor: pointer;
   background-color: rgb(231, 231, 231);
-}
-
-.addButton {
-  margin-top: 10px;
 }
 
 button:hover {

@@ -1,0 +1,91 @@
+.toggle {
+  /* touch-action: pan-x enables single*/
+  touch-action: pan-x;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  /* controls whether the user can select text */
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* don't need? */
+/* .toggle-input {
+    border: 0;
+    display: none;
+    overflow: hidden;
+    position: absolute;
+} */
+
+.toggle-check,
+.toggle-uncheck {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.toggle-check {
+  left: 8px;
+}
+
+.toggle-uncheck {
+  opacity: 1;
+  right: 10px;
+}
+
+.toggle-uncheck span,
+.toggle-check span {
+  align-items: center;
+  display: flex;
+  height: 10px;
+  justify-content: center;
+  position: relative;
+  width: 10px;
+  color: white;
+}
+
+.toggle-container {
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #7a7a7a;
+  transition: all 0.2s ease;
+}
+
+.toggle-circle {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #7a7a7a;
+  border-radius: 50%;
+  background-color: #fafafa;
+  transition: all 0.25s ease;
+}
+
+.toggle--checked .toggle-container {
+  background-color: green;
+}
+
+.toggle--checked .toggle-check {
+  opacity: 1;
+}
+
+.toggle--checked .toggle-uncheck {
+  opacity: 0;
+}
+
+.toggle--checked .toggle-circle {
+  left: 27px;
+}
