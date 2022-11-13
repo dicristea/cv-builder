@@ -13,6 +13,7 @@ Features:
 
 ## Todos
 
+- Make UI responsive for phone screens
 - Store user information in localStorage or other data storage on toggling preview mode and fetch data into updated UI
 - For date values equal to present month, replace with "Present" OR add checkbox for "currently working here"
 - Format UI for Preview Mode
