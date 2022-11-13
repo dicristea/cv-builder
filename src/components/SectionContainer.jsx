@@ -37,6 +37,7 @@ const SectionContainer = ({ isPreviewActive, listType }) => {
         onClick={addItem}
         text={listType === "Education" ? "Add Education" : "Add Experience"}
         className="addButton"
+        style={{ display: isPreviewActive ? "none" : "inline-block" }}
       />
     </div>
   );

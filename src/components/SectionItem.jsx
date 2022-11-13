@@ -49,7 +49,12 @@ const SectionItem = ({ itemType, isPreviewActive, deleteItem }) => {
           id="description"
           isPreviewActive={isPreviewActive}
         />
-        <Button className="deleteButton" text="Delete" onClick={deleteItem} />
+        <Button
+          className="deleteButton"
+          text="Delete"
+          onClick={deleteItem}
+          style={{ display: isPreviewActive ? "none" : "inline-block" }}
+        />
       </div>
     </div>
   );
